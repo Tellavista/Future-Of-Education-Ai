@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Future of Education AI – Powered by Tellavista</title>
+  <meta name="description" content="Discover the Future of Education AI with Tellavista. Personalized AI lessons for every subject worldwide – from coding and engineering to medicine and arts. Study smarter, learn faster, and unlock your potential." />
+  <meta name="keywords" content="Future of Education AI, Tellavista, AI learning platform, personalized AI lessons, adaptive learning, university courses, global education, interactive AI learning, study smarter, AI tutor" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Future of Education AI – Powered by Tellavista" />
+  <meta property="og:description" content="The world’s smartest AI learning platform for students everywhere. Master any subject, anytime, with Tellavista’s AI-powered lessons, quizzes, and guidance." />
+  <meta property="og:image" content="https://tellavista.onrender.com/logo.png" />
+  <meta property="og:url" content="https://tellavista.onrender.com/" />
+
+  <link rel="icon" href="https://tellavista.onrender.com/favicon.png" />
+
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {font-family:'Poppins', sans-serif; background:#f0f4f8; color:#1a1a1a; padding:20px;}
+    header {text-align:center; margin-bottom:30px;}
+    h1 {color:#ff4a57; font-size:2.2em; margin-bottom:10px;}
+    h2 {font-size:1.5em; margin-top:20px; margin-bottom:10px; color:#333;}
+    p {max-width:800px; margin:0 auto 15px auto; font-size:1.05em; line-height:1.6; color:#333; padding:0 10px;}
+    .btn {display:inline-block; background:#ff4a57; color:white; text-decoration:none; padding:15px 35px; border-radius:12px; font-weight:700; margin-top:25px; transition:0.3s;}
+    .btn:hover {background:#e03e48; transform:scale(1.05);}
+    .course-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(150px,1fr)); gap:15px; margin-top:30px; padding:0 10px;}
+    .course {background:#fff; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1); padding:20px; font-weight:600; text-align:center; transition:transform 0.3s ease;}
+    .course:hover {transform:translateY(-5px);}
+    footer {margin-top:50px; font-size:0.9em; color:#666; padding:10px 0; text-align:center;}
+
+    @media (max-width:768px){
+      h1 {font-size:1.8em;}
+      h2 {font-size:1.3em;}
+      p {font-size:0.95em;}
+      .btn {padding:12px 30px; font-size:0.95em;}
+      .course {font-size:0.95em;}
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Future of Education AI</h1>
+    <p>Powered by <strong>Tellavista</strong> — your personal AI tutor for every subject worldwide. Study smarter, learn faster, and unlock your full potential.</p>
+    <a class="btn" href="https://tellavista.onrender.com/">Start Learning Now</a>
+  </header>
+
+  <p>Welcome to <strong>Tellavista</strong> — the AI platform shaping the <strong>future of education</strong>. Instantly master any subject, from coding, engineering, and mathematics to medicine, arts, business, and social sciences. Interactive lessons, personalized guidance, and AI-powered quizzes make learning faster, smarter, and more engaging than ever before.</p>
+
+  <h2>Subjects You Can Master</h2>
+  <div class="course-grid" id="course-grid"></div>
+
+  <footer>
+    <p>© 2025 Tellavista – Leading the Future of Education with AI.</p>
+  </footer>
+
+  <script>
+    const courses = [
+      "Accounting", "Aeronautic & Astronautic Engineering", "Agriculture", "Arabic Studies", "Banking & Finance", "Biochemistry", "Botany", "Building", "Business Administration", "Business Education", "Chemical & Polymer Engineering", "Chemistry", "Christian Religious Studies", "Common and Islamic Law", "Computer Science", "Curriculum Studies", "Dentistry & Dental Surgery", "Drama/Dramatic/Performing Arts", "Early Childhood & Primary Education", "Economics", "Educational Management", "Educational Technology", "Electronics and Computer Engineering", "English Education", "English Language", "Environmental Management", "Estate Management", "Fine Arts", "Fisheries and Aquatic Biology", "French", "French Language Education", "Geography and Planning", "Geography Education", "Guidance and Counselling", "Health Education", "History and International Studies", "History Education", "Industrial Design", "Industrial Engineering and Production", "Industrial Relations and Personnel Management", "Insurance", "Islamic and Common Law", "Islamic Religious Studies", "Islamic Religious Studies Education", "Library and Information Science", "Linguistics", "Local Government Development and Administration", "Logistics and Supply Chain Management", "Marketing", "Mass Communication", "Mathematics", "Mathematics Education", "Mechanical Engineering", "Medical Laboratory Science", "Medicine and Surgery", "Microbiology", "Music", "Nursing", "Peace Studies", "Pharmacology", "Pharmacy", "Philosophy", "Physical and Health Education", "Physics", "Physics Education", "Physiology", "Physiotherapy", "Political Science", "Political Science Education", "Portuguese/English", "Project Management Technology", "Psychology", "Public Administration", "Quantity Surveying", "Radiography and Radiation Science", "Science Laboratory Technology", "Social Studies and Civic Education", "Sociology", "Special Education", "Survey and Geo-Informatics", "Taxation", "Theatre and Film Arts", "Transport Management and Operations", "Urban and Regional Planning", "Yoruba", "Yoruba Education", "Zoology"
+    ];
+
+    const grid = document.getElementById('course-grid');
+    courses.forEach(course => {
+      const div = document.createElement('div');
+      div.className = 'course';
+      div.textContent = course;
+      grid.appendChild(div);
+    });
+  </script>
+</body>
+</html>
